@@ -134,24 +134,36 @@ The complete list of variables of each feature vector is available in 'features.
 ========================================================================
 
 Activity labels are factored, so two columns are used:
-	ActivityID - numeric
-	ActivityName - factor variable
+
+ActivityID - numeric	
+ActivityName - factor variable
 
 Columns of the features list are factored. According to the description above and the features.txt file, their column appearance in x_test and x_train datasets is the same as their rowID in features.txt. So, features dataset uses three columns:
-	FeatureID - numeric, rowID in the original dataset; non-consecutive after cutting only mean and std data
-	FeatureName - factor variable, not changed from the original dataset.
-	FeatureName2 - factor variable, after some tidying modifications.
+
+FeatureID - numeric, rowID in the original dataset; non-consecutive after cutting only mean and std data
+FeatureName - factor variable, not changed from the original dataset.
+FeatureName2 - factor variable, after some tidying modifications.
+	
 	
 Those modifications are:
+
 Doubled string "BodyBody" is replaced with a single string "Body".
+
 Word "Mean" is used, instead of "-mean()", for every feature, containing mean values.
+
 Word "Std" is used, instead of "-std()", for every feature, containing standard deviation data.
+
 "Acceleration" is used to mark features with acceleration data, instead of "Acc".
+
 "Magnitude" is used to mark features with magnitude data, instead of "Mag".
+
 "Gyroscope" is used to mark features with gyroscope data, instead of "Gyro".
+
 Names of the features, containing time domain data, start with "time" instead of "t".
+
 Names of the features, containing frequency domain data, start with "freq" instead of "f".
 
+------------------------------------------------------------------------------------------------
 So, the finaldataset contains 69 columns:
  "ActivityID" - numeric, the ID of the activity                            
  "SubjectID"  - numeric, the ID of the subject                           
