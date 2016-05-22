@@ -1,5 +1,5 @@
 ==================================================================
-Original codebooks of the datasets (modifications are at the end of the document)
+# Original codebooks of the datasets (modifications are at the end of the document)
 ==================================================================
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
@@ -129,7 +129,7 @@ The complete list of variables of each feature vector is available in 'features.
 
 ========================================================================
 ========================================================================
-Codebook modifications 
+# Codebook modifications 
 ========================================================================
 ========================================================================
 
