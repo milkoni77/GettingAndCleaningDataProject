@@ -224,7 +224,12 @@ So, the finaldataset contains 69 columns:
  "ActivityName" 		 - factor variable, corresponding to ActivityID.
  
  The finalAvg dataset contains four columns:
- SujectID - factor variable, as in the finaldataset.
+ 
+ SubjectID - factor variable, as in the finaldataset.
+ 
  ActivityName - factor variable, as in the finaldataset.
+ 
  Variable  - factor variable, matching a column from finaldataset.
+ 
  mean(value) - numeric variable, the result of the aggregation.
+ 
